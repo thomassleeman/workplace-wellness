@@ -26,7 +26,7 @@ export function CallToAction() {
             our platform can support your people.
           </p>
           <div className="mt-8 flex justify-center">
-            <Button href="#" className="hidden bg-green-600 lg:block">
+            <Button href="#" className=" bg-green-600">
               Start your{' '}
               <em className="underline decoration-white decoration-1 underline-offset-2">
                 free
