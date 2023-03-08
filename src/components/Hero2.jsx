@@ -26,7 +26,7 @@ export function Hero2() {
     <div className=" overflow-hidden py-20 sm:py-32 lg:pb-32 xl:pb-36">
       <Container>
         <div className="lg:grid lg:grid-cols-12">
-          <div className="z-10 mx-auto max-w-2xl  text-center lg:col-span-6 lg:max-w-none lg:pt-6 lg:text-start xl:col-span-6">
+          <div className="z-10 mx-auto max-w-2xl lg:col-span-6 lg:max-w-none lg:pt-6 lg:text-start xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-green-900">
               Happiness is a{' '}
               <em className="underline decoration-yellow-300 underline-offset-8">

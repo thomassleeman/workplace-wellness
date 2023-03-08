@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import WellnessLogoGreen from './WellnessLogoGreen'
 
 import { Logo } from '@/components/unused/Logo'
 
@@ -22,9 +23,16 @@ function BackgroundIllustration(props) {
 export function AuthLayout({ title, subtitle, children }) {
   return (
     <main className="flex min-h-full overflow-hidden pt-16 sm:py-28">
-      <div className="mx-auto flex w-full max-w-2xl flex-col px-4 sm:px-6">
-        <Link href="/" aria-label="Home">
-          <Logo className="mx-auto h-10 w-auto" />
+      <div className="mx-auto flex w-full max-w-2xl  flex-col items-center px-4 sm:px-6">
+        <Link href="/" aria-label="Home" className="flex items-center">
+          {/* <Logo className="h-10 w-auto" /> */}
+          <WellnessLogoGreen className="h-14 w-auto" />
+          <div className="ml-4">
+            <p className="text-grey-400 text-base font-semibold">
+              Workplace Wellness
+            </p>
+            {/* <p className="mt-1 text-sm">Happiness is a team effort.</p> */}
+          </div>
         </Link>
         <div className="relative mt-12 sm:mt-16">
           <BackgroundIllustration

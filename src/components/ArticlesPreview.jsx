@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import officeImage from '../images/office-image.jpeg'
 
 const posts = [
   {
@@ -8,14 +9,12 @@ const posts = [
     href: '#',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
+    imageUrl: officeImage,
     date: 'Mar 16, 2020',
     datetime: '2020-03-16',
     author: {
       name: 'Michael Foster',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      imageUrl: officeImage,
     },
   },
   {
@@ -24,14 +23,12 @@ const posts = [
     href: '#',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
+    imageUrl: officeImage,
     date: 'Mar 16, 2020',
     datetime: '2020-03-16',
     author: {
       name: 'Michael Foster',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      imageUrl: officeImage,
     },
   },
   {
@@ -40,14 +37,12 @@ const posts = [
     href: '#',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
+    imageUrl: officeImage,
     date: 'Mar 16, 2020',
     datetime: '2020-03-16',
     author: {
       name: 'Michael Foster',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      imageUrl: officeImage,
     },
   },
   // More posts...
@@ -81,6 +76,8 @@ export default function ArticlesPreview() {
               <Image
                 src={post.imageUrl}
                 alt=""
+                width={400}
+                height={300}
                 className="absolute inset-0 -z-10 h-full w-full object-cover"
               />
               <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
@@ -100,6 +97,8 @@ export default function ArticlesPreview() {
                   <div className="flex gap-x-2.5">
                     <Image
                       src={post.author.imageUrl}
+                      width={400}
+                      height={300}
                       alt=""
                       className="h-6 w-6 flex-none rounded-full bg-white/10"
                     />
