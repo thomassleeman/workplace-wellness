@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 const posts = [
@@ -77,7 +78,7 @@ export default function ArticlesPreview() {
               key={post.id}
               className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
             >
-              <img
+              <Image
                 src={post.imageUrl}
                 alt=""
                 className="absolute inset-0 -z-10 h-full w-full object-cover"
@@ -97,7 +98,7 @@ export default function ArticlesPreview() {
                     <circle cx={1} cy={1} r={1} />
                   </svg>
                   <div className="flex gap-x-2.5">
-                    <img
+                    <Image
                       src={post.author.imageUrl}
                       alt=""
                       className="h-6 w-6 flex-none rounded-full bg-white/10"

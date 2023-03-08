@@ -555,8 +555,8 @@ export function PrimaryFeatures() {
           </h2>
           <p className="text-grey-400 mt-2 text-lg">
             Retention of staff, productivity, the ROI for looking after your
-            team's Menatl wellbeing is huge. We are fully focussed on the mental
-            health and wellbeaing of your employees.
+            team&apos;s Menatl wellbeing is huge. We are fully focussed on the
+            mental health and wellbeaing of your employees.
           </p>
         </div>
       </Container>
